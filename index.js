@@ -19,8 +19,7 @@ if (platform === 'darwin' && arch !== 'x64' && arch !== 'arm64') {
 var audiowaveformPath = path.join(
   __dirname,
   'bin',
-  platform,
-  arch,
+  platform + '-' + arch,
   platform === 'win32' ? 'audiowaveform.exe' : 'audiowaveform'
 );
 
